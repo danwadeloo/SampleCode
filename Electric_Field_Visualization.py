@@ -28,10 +28,6 @@ while z < L/2:
     z = z+dz
 print(len(list_of_charges))  ## print number of items in list
 
-## uncomment these two lines to make program wait for a mouse click:
-##print 'Click anywhere to continue'
-##scene.mouse.getclick()  ## wait for a mouse click, then continue
-
 # list of arrows; tail of each arrow is at an observation location
 dzz = ((10/8)*L)/10 #change in z axis location
 list_of_arrows = []
@@ -44,10 +40,6 @@ list_of_arrows2 = []
 for z in arange(R/2, (10*R)/2, 1/2):
         list_of_arrows.append(arrow(pos=(0, z , 0),
                                     axis=(0,1,0)))
-        
-## uncomment these two lines to make program wait for a mouse click:
-## print('Click anywhere to continue')
-## scene.mouse.getclick()   ## wait for a mouse click, then continue
 
 ###############################################################
 ## calculation of field
